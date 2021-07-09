@@ -7,7 +7,7 @@ def conexion():
     try:
         global conec
         global cur
-        conec = psycopg2.connect(host="localhost", database="arqui", port='5432', user="postgres", password="hola123")
+        conec = psycopg2.connect(host="localhost", database="arqui", user="postgres", password="hola123")
         print("Conexión con base de datos establecida")
         cur = conec.cursor()
     except:
