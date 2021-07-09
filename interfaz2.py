@@ -33,7 +33,10 @@ while True:
 	2.- Register
 
         0.- salir
-	\n""")
+
+
+
+        En caso de algun inconveniente contactarse al mail admin@mail.udp.cl\n""")
     if opcion == "0":
         socket.send(bytes('quit','utf-8'))
         time.sleep(5)
@@ -93,7 +96,10 @@ while True:
             5.- Editar usuario 
             6.- Eliminar usuario
             0.- salir
-	        \n""")
+
+
+
+            En caso de algun inconveniente contactarse al mail admin@mail.udp.cl\n""")
 
     if opcion=="1":
         socket.send(bytes('00010getsvcread','utf-8'))
